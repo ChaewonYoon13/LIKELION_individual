@@ -1,0 +1,33 @@
+.bar{
+    list-style-type:none;
+
+    /* 좌측 여백 없애기 */
+    padding-left:0px;
+    /* 우측 정렬 하기 */
+    float: center;
+
+    background-color: rgb(0, 0, 0, 0.7);
+    color: white;
+    font-size: 50px;
+    font-weight: 100px;
+
+    position: fixed;
+}
+    
+    
+ul li{
+    display:inline;
+    
+    /* li요소의 좌측 1px의 테두리 만들기 */
+    border-left: 1px solid #c0c0c0;
+    /* 테두리와 메뉴 간격 벌리기, padding: 위 오른쪽 아래 왼쪽; */
+    padding: 0px 10px 0px 10px;
+    /* 메뉴와 테두리 사이 간격 벌리기, margin: 위 오른쪽 아래 왼쪽; */
+    margin: 5px 0px 5px 0px;
+}
+    
+ul li:first-child {
+    
+    /* li의 첫번째 요소 좌측에는 테두리 없애기 */
+    border-left: none;
+}
