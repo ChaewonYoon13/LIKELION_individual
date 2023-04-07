@@ -8,7 +8,7 @@
 
     background-color: rgb(0, 0, 0, 0.7);
     color: white;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 100px;
 
     position: fixed;
@@ -34,7 +34,8 @@ ul li:first-child {
 
 /*모든 페이지의 백그라운드*/
 .bg{
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.69);
+    height: 50vw;
 }
 /*첫 화면 폰트*/
 .first-page-font{
@@ -49,3 +50,49 @@ ul li:first-child {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+[class^=imgtextbox]{
+    color: white;
+    width:31vw;
+    height:5vw;
+    display:inline;
+    margin:auto;
+    
+}
+
+.imgtextbox-left{
+    text-align: right;
+    padding-right: 10px;
+}
+.imgtextbox-right{
+  
+    text-align: left;
+    padding-left: 10px;
+}
+
+.imgtextbox-top{
+    padding-top: 10vw;
+}
+
+.imgtextbox-bottom{
+    padding-top:1vw;
+    padding-bottom: 9vw;
+    
+}
+
+img{
+    width:16vw;
+    height:20vw;
+    margin:auto;
+}
+
+.imgtop{
+    position: relative;
+    top:30px;
+}
+
+.imgbottom{
+    position: relative;
+    bottom:30px;
+}
+
