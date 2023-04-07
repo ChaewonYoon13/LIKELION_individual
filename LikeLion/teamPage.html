@@ -15,16 +15,38 @@
     </style>
 
     <link href="teamStyle.css" rel="stylesheet">
+
+    <!--프로그래스바 스크립트-->
+    <script>
+        window.onscroll = function () {
+            progressBar()
+        };
+     
+        function progressBar() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll/ height) * 100;
+            document.getElementsByClassName("progress-bar")[0].style.width = scrolled + "%";
+        }
+    </script>
 </head>
 <body>
+     
+
     <!-- 상단 메뉴바 -->
     <div class ="bar">
+    <!--프로그래스바 구현-->
+    <div class="porgress-back">
+        <div class="progress-container">
+           <div class="progress-bar"></div>
+    </div>
+       
+    </div>
         <ul>
-            <li>메뉴 1</li>
-            <li>메뉴 2</li>
-            <li>메뉴 3</li>
-            <li>메뉴 4</li>
-            <li>메뉴 5</li>
+            <li>TEAM5</li>
+            <li>HISTORY</li>
+            <li>VISION</li>
+            <li>MEMBERS</li>
         </ul>
     </div>
     <br><br><br><br><br>
